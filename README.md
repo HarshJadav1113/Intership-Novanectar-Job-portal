@@ -1,70 +1,154 @@
-# Getting Started with Create React App
+
+# 🚀 Novanectar Job Portal
+
+Welcome to **Novanectar Job Portal**, a modern and intuitive platform where job seekers and companies connect effortlessly. Built with **React.js**, styled using **CSS**, animated with **Framer Motion**, and featuring a functional contact form via **EmailJS** — this project demonstrates a real-world React application.
+
+---
+
+## 📸 Project Preview
+
+![Job Portal Preview](src/assets/1.png)
+
+---
+
+## ✨ Key Features
+
+- 🏠 **Home Page** – Eye-catching hero section with animations and a call-to-action button
+- 📬 **Contact Us** – Fully working email form using EmailJS
+- 🖱️ **Framer Motion** – Smooth animations on buttons and page transitions
+- 📱 **Responsive Design** – Mobile-friendly and cross-browser compatible
+- 🧭 **Navigation** – Simple routing using React Router DOM
+- 🔗 **Footer Section** – Includes links to policies and contact information
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/            → Image files (e.g., 1.png)
+├── components/        → Footer and other reusable UI components
+│   └── Footer.js
+├── pages/             → Main views like Home and Contact
+│   ├── Home.js
+│   └── Contact.js
+├── styles/            → CSS files for individual components
+│   ├── Home.css
+│   ├── Contact.css
+│   └── Footer.css
+├── App.js             → Main App component with routing
+└── index.js           → Entry point of the application
+```
+
+---
+
+## ⚙️ Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### 🔧 Installation Steps
 
-In the project directory, you can run:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/novanectar-job-portal.git
+   cd novanectar-job-portal
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+   Visit `http://localhost:3000` to view it in your browser.
+
+---
+
+## 📬 EmailJS Integration (for Contact Form)
+
+To activate the contact form functionality:
+
+1. Sign up at [https://www.emailjs.com](https://www.emailjs.com)
+2. Create:
+   - **Email Service**
+   - **Email Template**
+3. In `Contact.js`, replace:
+   ```js
+   emailjs.sendForm(
+     "YOUR_SERVICE_ID", 
+     "YOUR_TEMPLATE_ID", 
+     form.current, 
+     "YOUR_PUBLIC_KEY"
+   )
+   ```
+
+4. That's it! You’ll receive emails directly from the form submissions.
+
+---
+
+## 📦 Available Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode. Open `http://localhost:3000` in your browser.
 
 ### `npm run build`
+Builds the app for production to the `build` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm test`
+Launches the test runner in watch mode.
 
 ### `npm run eject`
+**Note:** This is a one-way operation. Once ejected, you can’t go back!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌐 Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Tech              | Purpose                            |
+|-------------------|-------------------------------------|
+| React             | Frontend JavaScript framework       |
+| Framer Motion     | Animations and transitions          |
+| EmailJS           | Contact form email service          |
+| React Router DOM  | Page routing                        |
+| CSS               | Styling and layout                  |
+| Font Awesome      | Icons in footer and links           |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧠 Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React Documentation](https://reactjs.org/)
+- [Framer Motion Docs](https://www.framer.com/motion/)
+- [EmailJS Docs](https://www.emailjs.com/docs/)
+- [React Router Docs](https://reactrouter.com/en/main)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To deploy the app:
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Then deploy the `/build` folder to your preferred hosting service (e.g., Vercel, Netlify, GitHub Pages).
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 👨‍💻 Author
 
-### Advanced Configuration
+**Harsh Jadav** – passionate about building modern, clean, and effective web apps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy coding with ✨ Novanectar Job Portal ✨!
