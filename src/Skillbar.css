@@ -1,0 +1,31 @@
+.skill-container {
+  margin-bottom: 1.5rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.skill-info span:first-child {
+  color: #2c3e50;
+}
+
+.skill-info span:last-child {
+  color: #7f8c8d;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 5px;
+  background: #3498db; /* default color, can be overridden inline */
+}
